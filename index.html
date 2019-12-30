@@ -41,7 +41,7 @@
                 } else {
                     $('form#submit').hide();        // hide initial submit form
                     $('form#result').show();        // and show the one used to display the results
-                    $('#url_long').text(data.url_long);
+                    $('#url_long').show().text(data.url_long);
                     $('#url_short').val(data.url_short).focus().select();
                 }
             })
@@ -101,7 +101,7 @@
         
         <form id="result" style="display: none">
     
-            <div class="help-block" id="url_long">
+            <div class="help-block" style="display: none" id="url_long">
             </div>
             <div class="input-group  p-0 pt-5 container">
             	<div class="input-group-prepend">
