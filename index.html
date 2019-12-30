@@ -72,64 +72,69 @@
 	
 </head>
 
-<body class="text-center">
+<body class="text-center bg-primary text-white">
 	
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNFDM8L"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	
-	<nav class="navbar navbar-light bg-light justify-content-between shadow-sm">
-	  <a class="navbar-brand font-weight-bold" href="https://bx.vc/">/ bx.vc  /</a>
-	  <a class="btn btn-outline-primary" href="https://bx.vc/admin/buy.html">Get your own</a>
-	</nav>
+<nav class="navbar navbar-dark bg-primary shadow-sm">
+  <a class="navbar-brand font-weight-bold text-white-50" href="https://bx.vc/">/ bx.vc  /</a>
+  <a class="nav-link text-white-50" href="https://bx.vc/admin/buy.html">About</a>
+</nav>
 
-<div class="container">
-
-		<h2 class="text-center m-5">Privacy & speed focused link shortener</h2>
-		
+<div class="container">		
 
         <form id="submit">
-            <div id="url-group" class="form-group">
-                <input type="url" required class="form-control" name="url" placeholder="Paste here the loooong URL"
-                    id="url_input">
-                <div class="help-block" style="display: none" id="url-error"></div>
-            </div>
-            <button type="submit" class="btn btn-lg btn-block btn-primary" id="url_input_submit">Shorten</button>
-
+         
+            <div class="input-group p-0 pt-5 container">
+                <input type="url" required class="form-control" name="url" placeholder="Paste here the loooong URL" id="url_input" aria-describedby="button-addon4">
+                <div class="help-block" style="display: none" id="url-error">
+                </div>
+           
+	            <div class="input-group-append" id="button-addon4">
+            		<button type="submit" class="btn btn-outline-light" id="url_input_submit">+</button>
+             	</div>
+              </div>
         </form>
         
         <form id="result" style="display: none">
     
-            <h4><span class="badge badge-success">Done!</span></h4>
             <span id="url_long"></span>
             
-            <div class="form-group">
-                <label for="name">You can now copy/paste the short URL</label>
-                <input type="text" class="form-control text-center" name="url" readonly="readonly" id="url_short">
-                
-            </div><button type="submit" class="btn btn-lg btn-block btn-secondary" id="page_reload">Create New</button>
-            <div>
+            <div class="input-group  p-0 pt-5 container">
+            	<div class="input-group-prepend">
+                	<button class="btn btn-outline-light" type="button" id="button-addon1" disabled>✔︎</button>
+            	</div>
+                <input type="text" class="form-control text-center" name="url" readonly="readonly" id="url_short" aria-describedby="button-addon4">
+                <div class="input-group-append" id="button-addon4">
+                <button type="submit" class="btn btn-outline-light" id="page_reload">Create New</button>
+                </div>
             </div>
+            
+     
         </form>
 
     </div> 
-      <div class="container text-left mt-5">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="text-muted">Speed</h2>
-            <p class="text-muted">Easy to use and lightning redirect.</p>
-          </div>
-          <div class="col-md-4">
-            <h2 class="text-muted">Privacy</h2>
-            <p class="text-muted">No private data saved anywhere.</p>
-          </div>
-          <div class="col-md-4">
-            <h2 class="text-muted">Scale</h2>
-            <p class="text-muted">Built on serverless architechture.</p>
-          </div>
-        </div>
+     
+     
+     <div class="container text-left mt-5">
+       <!-- Example row of columns -->
+       <div class="row">
+         <div class="col-md-4">
+           <h2 class="text-white-50">Speed</h2>
+           <p class="text-white-50">Easy to use and lightning redirect.</p>
+         </div>
+         <div class="col-md-4">
+           <h2 class="text-white-50">Privacy</h2>
+           <p class="text-white-50">No private data saved anywhere.</p>
+         </div>
+         <div class="col-md-4">
+           <h2 class="text-white-50">Scale</h2>
+           <p class="text-white-50">Built on serverless architechture.</p>
+         </div>
+       </div>
 
         <hr>
 
@@ -140,11 +145,11 @@
       
       </div>
       
-      <footer class="mastfoot mt-auto">
-          <div class="inner">
-              <p>Built for you by <a href="https://iniret.com/">Iniret</a>.</p>
-          </div>
-      </footer>
+     <footer class="mastfoot mt-auto">
+         <div class="inner">
+             <p class="small text-white-50">Built for you by <a href="https://iniret.com/" class="text-white">Iniret</a>.</p>
+         </div>
+     </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89704215-2"></script>
