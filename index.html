@@ -101,13 +101,13 @@
         
         <form id="result" style="display: none">
     
-            <span id="url_long"></span>
-            
+            <div class="help-block" id="url_long">
+            </div>
             <div class="input-group  p-0 pt-5 container">
             	<div class="input-group-prepend">
                 	<button class="btn btn-outline-light" type="button" id="button-addon1" disabled>✔︎</button>
             	</div>
-                <input type="text" class="form-control text-center" name="url" readonly="readonly" id="url_short" aria-describedby="button-addon4">
+                <input type="text" class="form-control" name="url" readonly="readonly" placeholder="bx.vc/url" id="url_short" aria-describedby="button-addon4">
                 <div class="input-group-append" id="button-addon4">
                 <button type="submit" class="btn btn-outline-light" id="page_reload">Create New</button>
                 </div>
